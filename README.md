@@ -13,8 +13,8 @@
 
 `result of the first method`
 
-![alt text](https://github.com/DmytroAksonenko/spring_rest_mongo/blob/main/images/srm1.JPG?raw=true)
+![alt text](https://github.com/DmytroAksonenko/spring_rest_mongo/blob/main/images/srm2.JPG?raw=true)
 
 `result of the second method`
 
-![alt text](https://github.com/DmytroAksonenko/spring_rest_mongo/blob/main/images/srm2.JPG?raw=true)
+![alt text](https://github.com/DmytroAksonenko/spring_rest_mongo/blob/main/images/srm1.JPG?raw=true)
