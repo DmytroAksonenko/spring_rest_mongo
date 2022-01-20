@@ -1,9 +1,14 @@
 package com.aksonenko.spring.service;
 
-import com.aksonenko.spring.data.PopData;
+import com.aksonenko.spring.dto.PopDTO;
 
-import java.util.Optional;
+import java.util.HashMap;
 
 public interface PopService {
-//    public Optional<PopData> getPop(String id);
+
+    PopDTO getPopByFullName(String fullName);
+
+    HashMap<String, Integer> getTopNames();
+
 }
+
