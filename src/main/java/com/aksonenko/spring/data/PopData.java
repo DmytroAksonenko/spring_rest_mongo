@@ -29,6 +29,4 @@ public class PopData {
     @Field("url")
     private String url;
 
-    private int namePopularity;
-
 }

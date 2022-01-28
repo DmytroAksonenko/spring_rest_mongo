@@ -17,16 +17,18 @@ public class PopServiceImpl implements PopService {
     private PopDAO popDAO;
 
     @Override
-    public PopDTO getPopByFullName(String fullName) {
-        PopData popData = popDAO.getPopByFullName(fullName);
-
-        PopDTO popDTO = new PopDTO();
-        popDTO.setId(popData.getId());
-        popDTO.setFirstName(popData.getFirstName());
-        popDTO.setLastName(popData.getLastName());
-        popDTO.setUrl(popData.getUrl());
-
-        return popDTO;
+    public List<PopDTO> getPopByFullName(String fullName) {
+        List<PopData> oldPops = popDAO.getPopByFullName(fullName);
+        List<PopDTO> newPops =  new ArrayList<>();
+        for(PopData popData : oldPops){
+            PopDTO popDTO = new PopDTO();
+            popDTO.setId(popData.getId());
+            popDTO.setFirstName(popData.getFirstName());
+            popDTO.setLastName(popData.getLastName());
+            popDTO.setUrl(popData.getUrl());
+            newPops.add(popDTO);
+        }
+        return newPops;
     }
 
     @Override

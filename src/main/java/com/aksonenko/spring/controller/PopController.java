@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 
 @RequestMapping("/pops")
 @RestController
@@ -15,7 +16,7 @@ public class PopController {
     private PopServiceImpl popService;
 
     @GetMapping("/get")
-    public PopDTO getPopByFullName(@RequestParam String fullName) {
+    public List<PopDTO> getPopByFullName(@RequestParam String fullName) {
 
         return popService.getPopByFullName(fullName);
     }
